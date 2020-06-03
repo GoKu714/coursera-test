@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme"
+    android:orientation="vertical"
+    android:weightSum="10"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1015dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/theme"
+                android:text="Choose City"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/manali"
+                android:layout_width="182dp"
+                android:layout_height="165dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/agra"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/south1" />
+
+            <ImageButton
+                android:id="@+id/agra"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_below="@+id/mumbai"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/taj" />
+
+            <ImageButton
+                android:id="@+id/mumbai"
+                android:layout_width="182dp"
+                android:layout_height="165dp"
+                android:layout_below="@+id/textView2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/goa" />
+
+            <ImageButton
+                android:id="@+id/shimala"
+                android:layout_width="182dp"
+                android:layout_height="165dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_column="0"
+                android:layout_marginBottom="218dp"
+                android:layout_row="0"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amritsar2" />
+
+            <ImageButton
+                android:id="@+id/jaipur"
+                android:layout_width="182dp"
+                android:layout_height="165dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView2"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/rajstan2" />
+
+            <ImageButton
+                android:id="@+id/dehli"
+                android:layout_width="182dp"
+                android:layout_height="165dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/manali"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/redfort" />
+
+            <ImageButton
+                android:id="@+id/mysore"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_below="@+id/manali"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amritsar2" />
+
+            <ImageButton
+                android:id="@+id/goa"
+                android:layout_width="182dp"
+                android:layout_height="165dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amritsar" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
